@@ -1,0 +1,313 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": null,
+  "installCommand": null,
+  "outputDirectory": "website",
+  "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "summervilleaccidentattorney.com"
+        }
+      ],
+      "destination": "https://www.summervilleaccidentattorney.com/:path*",
+      "permanent": true
+    },
+    {
+      "source": "/goose-creek",
+      "destination": "/areas/goose-creek/",
+      "permanent": true
+    },
+    {
+      "source": "/goose-creek/",
+      "destination": "/areas/goose-creek/",
+      "permanent": true
+    },
+    {
+      "source": "/attorneys",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/attorneys/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/truck-accident-3",
+      "destination": "/practice-areas/truck-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/truck-accident-3/",
+      "destination": "/practice-areas/truck-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/summerville",
+      "destination": "/areas/summerville/",
+      "permanent": true
+    },
+    {
+      "source": "/summerville/",
+      "destination": "/areas/summerville/",
+      "permanent": true
+    },
+    {
+      "source": "/mt-pleasant",
+      "destination": "/areas/mount-pleasant/",
+      "permanent": true
+    },
+    {
+      "source": "/mt-pleasant/",
+      "destination": "/areas/mount-pleasant/",
+      "permanent": true
+    },
+    {
+      "source": "/mount-pleasant",
+      "destination": "/areas/mount-pleasant/",
+      "permanent": true
+    },
+    {
+      "source": "/mount-pleasant/",
+      "destination": "/areas/mount-pleasant/",
+      "permanent": true
+    },
+    {
+      "source": "/motorcycle-accident",
+      "destination": "/practice-areas/motorcycle-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/motorcycle-accident/",
+      "destination": "/practice-areas/motorcycle-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/wrongful-death-2",
+      "destination": "/practice-areas/wrongful-death/",
+      "permanent": true
+    },
+    {
+      "source": "/wrongful-death-2/",
+      "destination": "/practice-areas/wrongful-death/",
+      "permanent": true
+    },
+    {
+      "source": "/wrongful-death",
+      "destination": "/practice-areas/wrongful-death/",
+      "permanent": true
+    },
+    {
+      "source": "/wrongful-death/",
+      "destination": "/practice-areas/wrongful-death/",
+      "permanent": true
+    },
+    {
+      "source": "/north-charleston",
+      "destination": "/areas/north-charleston/",
+      "permanent": true
+    },
+    {
+      "source": "/north-charleston/",
+      "destination": "/areas/north-charleston/",
+      "permanent": true
+    },
+    {
+      "source": "/car-accident",
+      "destination": "/practice-areas/car-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/car-accident/",
+      "destination": "/practice-areas/car-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/walterboro",
+      "destination": "/areas/walterboro/",
+      "permanent": true
+    },
+    {
+      "source": "/walterboro/",
+      "destination": "/areas/walterboro/",
+      "permanent": true
+    },
+    {
+      "source": "/moncks-corner",
+      "destination": "/areas/moncks-corner/",
+      "permanent": true
+    },
+    {
+      "source": "/moncks-corner/",
+      "destination": "/areas/moncks-corner/",
+      "permanent": true
+    },
+    {
+      "source": "/charleston",
+      "destination": "/areas/charleston/",
+      "permanent": true
+    },
+    {
+      "source": "/charleston/",
+      "destination": "/areas/charleston/",
+      "permanent": true
+    },
+    {
+      "source": "/ladson",
+      "destination": "/areas/ladson/",
+      "permanent": true
+    },
+    {
+      "source": "/ladson/",
+      "destination": "/areas/ladson/",
+      "permanent": true
+    },
+    {
+      "source": "/results",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/results/",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/serving",
+      "destination": "/areas/",
+      "permanent": true
+    },
+    {
+      "source": "/serving/",
+      "destination": "/areas/",
+      "permanent": true
+    },
+    {
+      "source": "/other-areas",
+      "destination": "/areas/",
+      "permanent": true
+    },
+    {
+      "source": "/other-areas/",
+      "destination": "/areas/",
+      "permanent": true
+    },
+    {
+      "source": "/west-ashley",
+      "destination": "/areas/west-ashley/",
+      "permanent": true
+    },
+    {
+      "source": "/west-ashley/",
+      "destination": "/areas/west-ashley/",
+      "permanent": true
+    },
+    {
+      "source": "/pedestrian-accident",
+      "destination": "/practice-areas/pedestrian-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/pedestrian-accident/",
+      "destination": "/practice-areas/pedestrian-accidents/",
+      "permanent": true
+    },
+    {
+      "source": "/dog-bite",
+      "destination": "/practice-areas/dog-bites/",
+      "permanent": true
+    },
+    {
+      "source": "/dog-bite/",
+      "destination": "/practice-areas/dog-bites/",
+      "permanent": true
+    },
+    {
+      "source": "/slip-and-fall",
+      "destination": "/practice-areas/slip-and-fall/",
+      "permanent": true
+    },
+    {
+      "source": "/slip-and-fall/",
+      "destination": "/practice-areas/slip-and-fall/",
+      "permanent": true
+    },
+    {
+      "source": "/workers-compensation",
+      "destination": "/practice-areas/workers-compensation/",
+      "permanent": true
+    },
+    {
+      "source": "/workers-compensation/",
+      "destination": "/practice-areas/workers-compensation/",
+      "permanent": true
+    },
+    {
+      "source": "/catastrophic-injuries",
+      "destination": "/practice-areas/catastrophic-injuries/",
+      "permanent": true
+    },
+    {
+      "source": "/catastrophic-injuries/",
+      "destination": "/practice-areas/catastrophic-injuries/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/contact-us/",
+      "destination": "/contact/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us",
+      "destination": "/about/",
+      "permanent": true
+    },
+    {
+      "source": "/about-us/",
+      "destination": "/about/",
+      "permanent": true
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "headers": [
+        {
+          "key": "X-Content-Type-Options",
+          "value": "nosniff"
+        },
+        {
+          "key": "Referrer-Policy",
+          "value": "strict-origin-when-cross-origin"
+        },
+        {
+          "key": "X-Frame-Options",
+          "value": "SAMEORIGIN"
+        },
+        {
+          "key": "Permissions-Policy",
+          "value": "camera=(), microphone=(), geolocation=()"
+        }
+      ]
+    }
+  ]
+}

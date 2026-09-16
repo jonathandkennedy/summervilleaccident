@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /assets/fonts/
+
+Sitemap: https://www.summervilleaccidentattorney.com/sitemap.xml
