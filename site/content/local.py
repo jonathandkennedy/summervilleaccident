@@ -29,7 +29,7 @@ def link(key, text=None, nofollow=False):
     l = LINKS.get(key)
     if not l:
         return esc(text or key)
-    return ext(l["url"], esc(text or l["label"]), nofollow)
+    return ext(l["url"], esc(text or l["label"]), nofollow or bool(l.get("nofollow")))
 
 
 def route(key):
