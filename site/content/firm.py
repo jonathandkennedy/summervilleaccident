@@ -122,7 +122,10 @@ HUB_SPOKES = {
     CAR: [CAR + "/what-to-do-after-a-car-accident-in-south-carolina", CAR + "/is-south-carolina-an-at-fault-state", CAR + "/south-carolina-comparative-negligence",
           CAR + "/south-carolina-car-accident-statute-of-limitations", CAR + "/south-carolina-car-accident-laws", CAR + "/should-i-talk-to-the-other-drivers-insurance-company",
           CAR + "/uninsured-motorist-accidents", CAR + "/hit-and-run-accidents", CAR + "/distracted-driving-accidents", "practice-areas/drunk-driving-accidents",
-          "practice-areas/rideshare-accidents", CAR + "/delivery-driver-accidents", CAR + "/auto-injury-assessment-after-a-crash", CAR + "/where-crashes-happen-in-summerville"],
+          "practice-areas/rideshare-accidents", CAR + "/delivery-driver-accidents", CAR + "/auto-injury-assessment-after-a-crash", CAR + "/where-crashes-happen-in-summerville",
+          CAR + "/how-to-get-your-south-carolina-accident-report", CAR + "/car-accident-without-a-police-report", CAR + "/how-long-after-a-car-accident-can-you-claim-injury",
+          CAR + "/car-accident-that-was-not-your-fault", CAR + "/minor-car-accident-what-to-do", CAR + "/what-happens-if-the-accident-was-my-fault",
+          CAR + "/rear-end-collisions", CAR + "/how-much-is-my-car-accident-case-worth", CAR + "/how-long-does-a-car-accident-case-take"],
     "practice-areas/truck-accidents": ["practice-areas/truck-accidents/who-is-liable-in-a-truck-accident"],
     "practice-areas/motorcycle-accidents": ["practice-areas/motorcycle-accidents/south-carolina-motorcycle-helmet-law"],
     "practice-areas/pedestrian-accidents": [],
@@ -140,6 +143,7 @@ NAV = [
     ("Practice areas", "practice-areas", HUBS + ["practice-areas/rideshare-accidents", "practice-areas/drunk-driving-accidents"], "All practice areas"),
     ("Areas we serve", "areas", ["areas/summerville", "areas/goose-creek", "areas/ladson", "areas/north-charleston", "areas/charleston", "areas/mount-pleasant", "areas/moncks-corner", "areas/walterboro", "areas/west-ashley"], "All communities"),
     ("About", "about", ["attorneys/tara-frost", "attorneys/jack-frost", "reviews"], "Our team"),
+    ("Questions", "questions", [], ""),
     ("Blog", "blog", [], ""),
     ("Español", "es/abogado-de-accidentes", [], ""),
 ]
@@ -149,7 +153,7 @@ FOOTER_PRACTICE = [("Car accidents", "practice-areas/car-accidents"), ("Truck ac
                    ("Dog bites", "practice-areas/dog-bites"), ("Slip and fall", "practice-areas/slip-and-fall"), ("Workers' compensation", "practice-areas/workers-compensation"),
                    ("Catastrophic injuries", "practice-areas/catastrophic-injuries"), ("Wrongful death", "practice-areas/wrongful-death")]
 FOOTER_EXPLORE = [("Our team", "about"), ("Tara L. Frost", "attorneys/tara-frost"), ("Jack C. Frost", "attorneys/jack-frost"), ("Client reviews", "reviews"),
-                  ("Blog", "blog"), ("Abogado de accidentes (español)", "es/abogado-de-accidentes"), ("Free consultation & directions", "contact")]
+                  ("Questions people ask", "questions"), ("Blog", "blog"), ("Abogado de accidentes (español)", "es/abogado-de-accidentes"), ("Free consultation & directions", "contact")]
 FOOTER_AREAS = ["areas/summerville", "areas/goose-creek", "areas/ladson", "areas/north-charleston", "areas/charleston", "areas/mount-pleasant", "areas/moncks-corner", "areas/walterboro", "areas/west-ashley"]
 
 COUNTY_ORDER = ["Dorchester County", "Berkeley County", "Charleston County", "Colleton County"]

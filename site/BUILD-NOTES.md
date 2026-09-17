@@ -54,3 +54,15 @@ Same system as the main site (Fraunces and Public Sans, the navy palette, one ~2
 ## Deploying on SiteGround (or any Apache host)
 
 Upload the contents of `website/` to the document root, including the hidden `.htaccess`, and make sure the previous site is no longer serving the root.
+
+## Round two: answer pages from search and community research (September 17)
+
+What the research showed, and what was built from it:
+
+- **The competing Summerville pages are thin.** Gil Gatch's car-accident and dog-bite pages are about 630 words each; Shelbourne's whole home page is about 1,700; their blog posts are 370 to 920 words. Every hub and answer page here is 900 to 1,800 words with FAQ markup, statutes and local specifics. Depth is not the obstacle; authority and the map pack are (see below).
+- **The local pack is the real competition** for "personal injury lawyer summerville sc": The Thumbs Up Guys (Nexton Square), Joye Law Firm (N. Main St) and Crantford Meehan / Steinberg hold the three map spots for every money search. Organic positions 4 to 9 are Shelbourne, Joye, Stanley, Super Lawyers, Gil Gatch and John Price. Getting into the pack means reviews, a complete Business Profile with the injury categories, and photos; the site cannot do that alone.
+- **Zero-difficulty questions with real volume** that nobody local answers: "sc highway patrol accident reports" (390/mo), "south carolina accident reports" (260), "can you claim car accident without police report" (390, $42 CPC), "how long after a car accident can i claim injury" (260, $74 CPC), "how long after car accident can you go to hospital" (110), "what to do after a car accident not your fault" (2,400, KD 10), "what to do after a minor car accident" (590), "what happens after a car accident that is your fault" (260). Nine new answer pages target these, under `/practice-areas/car-accidents/`.
+- **Reddit could not be reached from the build environment** (direct requests, the archive API and the fetch tool all blocked; agent-reach's own README says Reddit now requires a logged-in session). The new pages therefore link to the subreddit search pages (r/Charleston, r/SummervilleSC, r/southcarolina, r/legaladvice, r/Insurance), Nextdoor, and the Justia and Avvo South Carolina question boards, all `rel="nofollow"`. When a logged-in Reddit route is available, replace the search links with the specific threads.
+- **`/questions/`** collects every FAQ on the site, grouped by topic, each linking to its page, with the community links above. It is in the main menu and the footer.
+
+Facts to confirm from this round: the SCDMV collision-report fee (described only as "a small fee"); that the tri-county courts require mediation before trial (stated on the timeline page); the FR-10 layout description (the report number "near the top").

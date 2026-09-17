@@ -592,6 +592,8 @@ sp(HUB + "/where-crashes-happen-in-summerville",
        + '<p>The Ladson corridor where three counties meet: the College Park Road interchange, the US-78 and Ladson Road crossroads near the fairgrounds, and the truck traffic between the Palmetto Commerce Parkway warehouses and the interstate. County sheriffs (Dorchester, Berkeley or Charleston depending on the exact spot) or Highway Patrol investigate.</p>'
        + '<h3>The two-lane roads</h3>'
        + '<p>Highway 78 toward Ridgeville and St. George, Orangeburg Road, Central Avenue past the town limits, and Highway 61. Single-vehicle and head-on crashes at speed, often at night, often with impairment.</p>'
+       + '<h2>Is there a crash on I-26 right now?</h2>'
+       + f'<p>For live conditions, closures and the reason traffic is stopped on I-26, I-526 or I-95, use {link("sc511", "SCDOT’s 511 map")}. It shows incidents as the Highway Patrol reports them and is the fastest way to know whether to take Highway 78 or 17-A instead. If you were in the crash it is showing, the Highway Patrol has the report; {A(HUB + "/how-to-get-your-south-carolina-accident-report", "here is how to get it")}.</p>'
        + '<h2>Why location matters to the claim</h2>'
        + checks([
            "<b>Who investigated.</b> The Summerville Police Department, the Dorchester or Berkeley County Sheriff's Office, or the Highway Patrol. Each keeps reports, body-camera video and 911 audio differently, and we know whom to ask.",

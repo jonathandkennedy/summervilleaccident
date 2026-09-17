@@ -34,6 +34,7 @@ import content.practice  # noqa: E402,F401
 import content.cities  # noqa: E402,F401
 import content.posts  # noqa: E402,F401
 import content.spanish  # noqa: E402,F401
+import content.questions  # noqa: E402,F401
 
 BUILD_DATE = firm.BUILD_DATE
 ORIGIN = firm.ORIGIN
@@ -210,6 +211,32 @@ def findus_html():
     return '<div class="links">' + "".join(out) + "</div>"
 
 
+def allfaqs_html():
+    """Every question answered on the site, grouped by the page that owns it, each linking to that page. Used by /questions/."""
+    groups = []
+    order = [p for p in PAGES if p["faqs"] and not p["noindex"] and p["kind"] in ("home", "hub", "spoke", "city", "post", "page") and p["slug"] not in ("questions", "es/abogado-de-accidentes")]
+    kinds = [("Car accidents", lambda p: p["slug"] == firm.CAR or p.get("hub") == firm.CAR),
+             ("Trucks, motorcycles, pedestrians and rideshare", lambda p: any(p["slug"].startswith(h) for h in ("practice-areas/truck", "practice-areas/motorcycle", "practice-areas/pedestrian"))),
+             ("Dog bites", lambda p: p["slug"].startswith("practice-areas/dog-bites")),
+             ("Falls, work injuries, catastrophic injuries and wrongful death", lambda p: any(p["slug"].startswith(h) for h in ("practice-areas/slip", "practice-areas/workers", "practice-areas/catastrophic", "practice-areas/wrongful"))),
+             ("Your town", lambda p: p["kind"] == "city"),
+             ("From the blog", lambda p: p["kind"] == "post"),
+             ("Working with us", lambda p: True)]
+    used = set()
+    for label, test in kinds:
+        items = []
+        for p in order:
+            if p["slug"] in used or not test(p):
+                continue
+            used.add(p["slug"])
+            for q, a in p["faqs"]:
+                text = re.sub(r"<[^>]+>", "", a)
+                items.append(f'<details><summary>{esc(q)}</summary><div class="a"><p>{esc(text)}</p><p class="small"><a href="{url(p["slug"])}">Read the full page: {esc(p["nav_label"] if p["kind"] != "post" else p["h1"])} →</a></p></div></details>')
+        if items:
+            groups.append(f'<h2>{esc(label)}</h2><div class="faq">{"".join(items)}</div>')
+    return "".join(groups)
+
+
 def form_html():
     """The free-case-review form (Formspree). One per page; the inline script submits it over AJAX and redirects to /thank-you/."""
     topics = ["Car accident", "Truck accident", "Motorcycle accident", "Pedestrian or bicycle accident", "Uber or Lyft accident", "Hit by a drunk driver", "Dog bite",
@@ -290,6 +317,8 @@ def expand_tokens(html):
     html = html.replace("[[team]]", team_html()).replace("[[nap]]", nap_html()).replace("[[map]]", map_html())
     html = html.replace("[[findus]]", findus_html()).replace("[[hours]]", hours_html()).replace("[[citylist]]", citylist_html())
     html = html.replace("[[form]]", form_html())
+    if "[[allfaqs]]" in html:
+        html = html.replace("[[allfaqs]]", allfaqs_html())
     if "[[practice-cards]]" in html:
         from content.core import practice_cards
         html = html.replace("[[practice-cards]]", practice_cards())

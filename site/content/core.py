@@ -48,6 +48,8 @@ home_faqs = [
      f"Yes. The driver who caused the crash, and that driver's insurer, pay for the harm. You can recover as long as you were not more than 50 percent at fault, reduced by your share. Details on {A(CAR + '/is-south-carolina-an-at-fault-state', 'at-fault rules')} and {A(CAR + '/south-carolina-comparative-negligence', 'comparative negligence')}."),
     ("Do I really need a lawyer, or can I deal with the insurance company myself?",
      "For a fender-bender with no injuries, you may not need one, and we will tell you so. Once there is an injury, the adjuster's job is to close your claim for as little as possible, and the first offer usually arrives before anyone knows what your treatment will cost. A free call tells you which situation you are in."),
+    ("How do I choose a personal injury lawyer in Summerville?",
+     f"Ask who will actually handle your case (an attorney, or a case manager), whether the firm tries cases or only settles, what the fee and costs are in writing, and how fast calls are returned. Read the Google reviews for mentions of the attorney by name. Then call two firms and compare the conversations. Our answers are on {A('about', 'the team page')}, and every other question we get is answered on {A('questions', 'the questions page')}."),
     ("Where are you, and what areas do you serve?",
      f"Our office is at 128 Linwood Lane in Summerville. We represent injured people across Dorchester, Berkeley, Charleston and Colleton counties, including {A('areas/goose-creek', 'Goose Creek')}, {A('areas/ladson', 'Ladson')}, {A('areas/north-charleston', 'North Charleston')}, {A('areas/charleston', 'Charleston')}, {A('areas/mount-pleasant', 'Mount Pleasant')}, {A('areas/moncks-corner', 'Moncks Corner')} and {A('areas/walterboro', 'Walterboro')}. If you cannot travel, we come to you or meet by phone and video."),
 ]
@@ -94,7 +96,7 @@ home_body = "".join((
         '<p class="small">Testimonials reflect individual experiences. Prior results do not guarantee a similar outcome.</p>',
         label="Client voices", title="What our clients say"),
     section('<div class="faq">' + "".join(f'<details><summary>{esc(q)}</summary><div class="a"><p>{a}</p></div></details>' for q, a in home_faqs) + '</div>',
-            cls="tint", label="Questions people ask", title="Straight answers to the questions Summerville searches for"),
+            cls="tint", label="Questions people ask", title="Straight answers to the questions Summerville searches for", lead=f'Every question answered on this site is collected on {A("questions", "one page")}, with links to where people ask them.'),
     section(
         '<p>We know these roads and this community. From Main Street and Bacons Bridge Road in Summerville to I-26, Highway 17-A, Dorchester Road and the busy corridors of Dorchester, Berkeley and Charleston counties, we represent the injured throughout the Lowcountry. Each community page explains which police agency writes the crash report there, which hospital you were likely taken to, which court hears the case, and how to reach us.</p>'
         '<ul class="areas">' + "".join(f'<li><a href="[[{s}]]">{esc(n)}</a></li>' for s, n in [("areas/summerville", "Summerville"), ("areas/goose-creek", "Goose Creek"), ("areas/ladson", "Ladson"), ("areas/north-charleston", "North Charleston"), ("areas/charleston", "Charleston"), ("areas/mount-pleasant", "Mount Pleasant"), ("areas/moncks-corner", "Moncks Corner"), ("areas/walterboro", "Walterboro"), ("areas/west-ashley", "West Ashley")]) + '</ul>'

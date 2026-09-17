@@ -1051,6 +1051,81 @@
    "label": "American Veterinary Medical Association – dog bite prevention",
    "url": "https://www.avma.org/resources-tools/pet-owners/dog-bite-prevention",
    "nofollow": false
+  },
+  "reddit_charleston_accidents": {
+   "label": "r/Charleston threads about car accidents",
+   "url": "https://www.reddit.com/r/Charleston/search/?q=car+accident&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_charleston_lawyer": {
+   "label": "r/Charleston threads asking for an accident lawyer",
+   "url": "https://www.reddit.com/r/Charleston/search/?q=accident+lawyer&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_summerville_accidents": {
+   "label": "r/SummervilleSC threads about accidents",
+   "url": "https://www.reddit.com/r/SummervilleSC/search/?q=accident&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_southcarolina_accidents": {
+   "label": "r/southcarolina threads about car accidents and insurance",
+   "url": "https://www.reddit.com/r/southcarolina/search/?q=car+accident+insurance&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_legaladvice_sc": {
+   "label": "r/legaladvice questions about South Carolina car accidents",
+   "url": "https://www.reddit.com/r/legaladvice/search/?q=south+carolina+car+accident&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_insurance_sc": {
+   "label": "r/Insurance questions about South Carolina claims",
+   "url": "https://www.reddit.com/r/Insurance/search/?q=south+carolina+accident&restrict_sr=1",
+   "nofollow": true
+  },
+  "reddit_charleston_dogbite": {
+   "label": "r/Charleston threads about dog bites",
+   "url": "https://www.reddit.com/r/Charleston/search/?q=dog+bite&restrict_sr=1",
+   "nofollow": true
+  },
+  "justia_sc_car": {
+   "label": "Justia Answers: South Carolina car accident questions",
+   "url": "https://answers.justia.com/questions/car-accidents/south-carolina",
+   "nofollow": true
+  },
+  "justia_sc_injury": {
+   "label": "Justia Answers: South Carolina personal injury questions",
+   "url": "https://answers.justia.com/questions/personal-injury/south-carolina",
+   "nofollow": true
+  },
+  "justia_sc_dog": {
+   "label": "Justia Answers: South Carolina dog bite questions",
+   "url": "https://answers.justia.com/questions/animal-dog-law/south-carolina",
+   "nofollow": true
+  },
+  "avvo_sc_car": {
+   "label": "Avvo: South Carolina car accident questions",
+   "url": "https://www.avvo.com/topics/car-accident/advice?state=SC",
+   "nofollow": true
+  },
+  "scdoi_faq": {
+   "label": "SC Department of Insurance – auto insurance FAQs",
+   "url": "https://www.doi.sc.gov/983/FAQs-Auto-Insurance",
+   "nofollow": false
+  },
+  "scdmv_collision_report": {
+   "label": "SCDMV – request a copy of a collision report",
+   "url": "https://www.scdmvonline.com/Driver-Services/Reports/Collision-Reports",
+   "nofollow": false
+  },
+  "sc511": {
+   "label": "SCDOT 511 live traffic and incident map",
+   "url": "https://www.511sc.org/",
+   "nofollow": false
+  },
+  "schp_mait_hitrun": {
+   "label": "SC Highway Patrol – hit-and-run investigations (MAIT)",
+   "url": "https://scdps.sc.gov/schp",
+   "nofollow": false
   }
  }
 }
