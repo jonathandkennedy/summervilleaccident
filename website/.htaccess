@@ -1,0 +1,55 @@
+# Summerville Accident Attorney (Frost Law Group) — canonical host, HTTPS, trailing slashes, and the redirect map from the search audit
+Options -Indexes
+ErrorDocument 404 /404.html
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+# https + www (one address for every page; Google already chose the www host)
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.summervilleaccidentattorney\.com$ [NC]
+RewriteRule ^ https://www.summervilleaccidentattorney.com%{REQUEST_URI} [R=301,L,NE]
+# old addresses -> new pages
+RewriteRule ^goose-creek/?$ /areas/goose-creek/ [R=301,L]
+RewriteRule ^attorneys/?$ /about/ [R=301,L]
+RewriteRule ^truck-accident-3/?$ /practice-areas/truck-accidents/ [R=301,L]
+RewriteRule ^summerville/?$ /areas/summerville/ [R=301,L]
+RewriteRule ^mt-pleasant/?$ /areas/mount-pleasant/ [R=301,L]
+RewriteRule ^mount-pleasant/?$ /areas/mount-pleasant/ [R=301,L]
+RewriteRule ^motorcycle-accident/?$ /practice-areas/motorcycle-accidents/ [R=301,L]
+RewriteRule ^wrongful-death-2/?$ /practice-areas/wrongful-death/ [R=301,L]
+RewriteRule ^wrongful-death/?$ /practice-areas/wrongful-death/ [R=301,L]
+RewriteRule ^north-charleston/?$ /areas/north-charleston/ [R=301,L]
+RewriteRule ^car-accident/?$ /practice-areas/car-accidents/ [R=301,L]
+RewriteRule ^walterboro/?$ /areas/walterboro/ [R=301,L]
+RewriteRule ^moncks-corner/?$ /areas/moncks-corner/ [R=301,L]
+RewriteRule ^charleston/?$ /areas/charleston/ [R=301,L]
+RewriteRule ^ladson/?$ /areas/ladson/ [R=301,L]
+RewriteRule ^results/?$ /about/ [R=301,L]
+RewriteRule ^serving/?$ /areas/ [R=301,L]
+RewriteRule ^other-areas/?$ /areas/ [R=301,L]
+RewriteRule ^west-ashley/?$ /areas/west-ashley/ [R=301,L]
+RewriteRule ^pedestrian-accident/?$ /practice-areas/pedestrian-accidents/ [R=301,L]
+RewriteRule ^dog-bite/?$ /practice-areas/dog-bites/ [R=301,L]
+RewriteRule ^slip-and-fall/?$ /practice-areas/slip-and-fall/ [R=301,L]
+RewriteRule ^workers-compensation/?$ /practice-areas/workers-compensation/ [R=301,L]
+RewriteRule ^catastrophic-injuries/?$ /practice-areas/catastrophic-injuries/ [R=301,L]
+RewriteRule ^contact-us/?$ /contact/ [R=301,L]
+RewriteRule ^about-us/?$ /about/ [R=301,L]
+# add a trailing slash to directory-style URLs
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !/$
+RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{2,5}$
+RewriteRule ^(.*)$ /$1/ [R=301,L]
+</IfModule>
+
+<IfModule mod_headers.c>
+Header set X-Content-Type-Options "nosniff"
+Header set Referrer-Policy "strict-origin-when-cross-origin"
+<FilesMatch "\.(woff2|css|svg|jpg|png)$">
+Header set Cache-Control "public, max-age=31536000, immutable"
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/css application/javascript application/json image/svg+xml
+</IfModule>
