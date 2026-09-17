@@ -379,3 +379,5 @@ code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.9em;background
 .topbar a{white-space:nowrap}
 @media (max-width:720px){.topbar .tag .line{display:inline}.topbar .xsite{display:none}}
 @media (max-width:640px){.hdr .wrap{gap:.6rem}.brand{gap:.5rem;min-width:0}.brand img{height:38px}.brand .word{font-size:1rem;white-space:normal;line-height:1.05}.brand .word small{font-size:.56rem;letter-spacing:.08em}}
+/* Mid-width screens: seven menu items plus the long wordmark need a little less room each. */
+@media (max-width:1400px) and (min-width:1061px){.brand .word{font-size:1.05rem}.brand img{height:40px}.nav a{padding:.7rem .45rem;font-size:.88rem}.nav .cta{margin-left:.25rem}.hdr .wrap{gap:.6rem}}
