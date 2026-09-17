@@ -66,3 +66,7 @@ What the research showed, and what was built from it:
 - **`/questions/`** collects every FAQ on the site, grouped by topic, each linking to its page, with the community links above. It is in the main menu and the footer.
 
 Facts to confirm from this round: the SCDMV collision-report fee (described only as "a small fee"); that the tri-county courts require mediation before trial (stated on the timeline page); the FR-10 layout description (the report number "near the top").
+
+## Blog cover images
+
+The four blog covers (`site/assets/img/cover-*.jpg`) were generated with OpenAI's image model to prompts that exclude text, logos, license plates and people. They are illustrations, not photographs of real places or vehicles, and the captions say so. Swap in real photos at any time by replacing the files and rebuilding. The firm's own photos are used everywhere else.
